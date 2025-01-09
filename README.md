@@ -1,9 +1,10 @@
 # Brute Force Attack Analysis with Splunk
 
 ```bash
-index="your_index" sourcetype="linux_auth" "Failed password"
-| stats count by src_ip user
-| sort -count
+   index="your_index" sourcetype="linux_auth" "Failed password"
+   | stats count by src_ip user
+   | sort -count
+
 
 
 
