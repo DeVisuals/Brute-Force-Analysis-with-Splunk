@@ -71,9 +71,15 @@ Dashboard XML: [`dashboard/brute_force_dashboard.xml`](dashboard/brute_force_das
 
 ## Results
 - **Attack Summary**:
-  - Total Failed Login Attempts: `X`
-  - Attacker IP Address: `192.168.1.100`
-  - Targeted User Accounts: `admin, root`
+  - Attackers IP Address: `X`
+  - Targeted User Account: `192.168.1.100`
+  - Timestamp when the attacker manually logged: `admin, root`
+  - SSH login sessions number:
+  - New User added by attacker:
+  - Time the attacker's first SSH session ended:
+  - Full command executed by attacker using sudo: 
+
+
 - **Mitigation Recommendations**:
   - Enforce account lockout policies.
   - Implement multi-factor authentication (MFA).
