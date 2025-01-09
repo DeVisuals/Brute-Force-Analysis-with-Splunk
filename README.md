@@ -2,8 +2,7 @@
 
 ```bash
    index="your_index" sourcetype="linux_auth" "Failed password"
-   | stats count by src_ip user
-   | sort -count
+
 
 
 
