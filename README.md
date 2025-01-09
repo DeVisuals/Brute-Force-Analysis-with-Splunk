@@ -31,7 +31,7 @@ This project is part of my journey as a SOC analyst and penetration tester.
 ## Dataset
 The analysis uses a sample Linux `auth.log` file. The data is anonymized to protect sensitive information.
 
-- File: `datasets/auth.log`
+- File: `Dataset/auth.log`
 
 ## Splunk Queries
 The following Splunk queries are included:
