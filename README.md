@@ -1,6 +1,6 @@
 # Brute Force Attack Analysis with Splunk
 
-1. code:
+ code:
    ```bash
    index="your_index" sourcetype="linux_auth" "Failed password"
 
