@@ -6,6 +6,7 @@ This project demonstrates how to analyze and detect a brute force attack using a
 - [Overview](#overview)
 - [Features](#features)
 - [Dataset](#dataset)
+- [Questions](#questions)
 - [Splunk Queries](#splunk-queries)
 - [Dashboard](#dashboard)
 - [How to Use](#how-to-use)
@@ -32,6 +33,16 @@ This project is part of my journey as a SOC analyst and penetration tester.
 The analysis uses a sample Linux `auth.log` file. The data is anonymized to protect sensitive information.
 
 - File: `Dataset/auth.log`
+
+## Questions
+Below are questions that can be used for analysis 
+1. Analyzing the auth.log, can you identify the IP address used by the attacker to carry out a brute force attack?.
+2. The brute force attempts were successful, and the attacker gained access to an account on the server. What is the username of this account?
+3. Can you identify the timestamp when the attacker manually logged in to the server to carry out their objectives?
+4. SSH login sessions are tracked and assigned a session number upon login. What is the session number assigned to the attacker's session for the user account from Question 2?
+5. The attacker added a new user as part of their persistence strategy on the server and gave this new user account higher privileges. What is the name of this account?
+6. What time did the attacker's first SSH session end according to auth.log?
+7. The attacker logged into their backdoor account and utilized their higher privileges to download a script. What is the full command executed using sudo?
 
 ## Splunk Queries
 The following Splunk queries are included:
