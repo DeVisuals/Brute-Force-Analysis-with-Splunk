@@ -17,14 +17,14 @@ This project demonstrates how to analyze and detect a brute force attack using a
 Brute force attacks are common and dangerous. This project:
 - Detects brute force attempts in `auth.log`.
 - Identifies the attacker, targeted accounts, and successful breaches.
-- Visualizes attack patterns and geolocates attackers.
+- Visualizes attack patterns.
 
 This project is part of my journey as a SOC analyst and penetration tester.
 
 ## Features
 1. Identify repeated failed login attempts (brute force).
 2. Detect successful logins after failed attempts.
-3. Geolocate attacker IP addresses.
+3. Locate attacker IP addresses.
 4. Visualize attack patterns with time charts and dashboards.
 5. Provide insights to mitigate future attacks.
 
@@ -37,7 +37,7 @@ The analysis uses a sample Linux `auth.log` file. The data is anonymized to prot
 The following Splunk queries are included:
 - **Failed Login Attempts**: Analyze IPs with the most failed login attempts.
 - **Successful Logins After Failure**: Detect successful logins post-failure.
-- **Geolocation of Attacker IPs**: Use `iplocation` to identify attacker locations.
+- **Attacker IP address**: Use to identify attacker locations.
 - **Attack Timeline**: Visualize attack patterns over time.
 
 Queries are available in the [`queries/`](queries/) folder.
@@ -46,8 +46,7 @@ Queries are available in the [`queries/`](queries/) folder.
 A pre-built Splunk dashboard is included to visualize:
 1. Failed login attempts by IP and username.
 2. Successful logins after failed attempts.
-3. Geographical locations of attackers.
-4. Attack trends over time.
+3. Attack trends over time.
 
 Dashboard XML: [`dashboard/brute_force_dashboard.xml`](dashboard/brute_force_dashboard.xml)
 
@@ -64,7 +63,6 @@ Dashboard XML: [`dashboard/brute_force_dashboard.xml`](dashboard/brute_force_das
   - Total Failed Login Attempts: `X`
   - Attacker IP Address: `192.168.1.100`
   - Targeted User Accounts: `admin, root`
-  - Geolocation: `City: Lagos, Country: Nigeria`
 - **Mitigation Recommendations**:
   - Enforce account lockout policies.
   - Implement multi-factor authentication (MFA).
