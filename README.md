@@ -1,9 +1,5 @@
 # Brute Force Attack Analysis with Splunk
 
-index="your_index" sourcetype="linux_auth" "Failed password"
-| stats count by src_ip user
-| sort -count
-
 
 This project demonstrates how to analyze and detect a brute force attack using a sample `auth.log` file in Splunk. It showcases the skills of log analysis, threat detection, and creating visualizations to highlight attacker activity.
 
