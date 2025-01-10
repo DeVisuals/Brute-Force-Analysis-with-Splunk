@@ -1,0 +1,4 @@
+Extract fields like host_name, failed_password, time_stamp etc before queries
+
+```bash
+1. index=_* OR index=* sourcetype=Auth.logs "failed password"  host_name="172-31-35-28"
